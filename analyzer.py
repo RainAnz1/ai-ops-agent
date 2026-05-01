@@ -1,9 +1,12 @@
+import requests
+
 def analyze_error(logs):
-    if "address already in use" in logs:
-        return "端口占用"
-    elif "permission denied" in logs:
-        return "权限问题"
-    elif "failed" in logs.lower():
-        return "服务启动失败"
-    else:
-        return "未知错误"
+    prompt = f"分析以下服务器日志并给出错误类型：\n{logs}"
+
+    # 这里你可以接 OpenAI / OpenClaw
+    # 简化版：
+    response = requests.post("你的API地址", json={
+        "prompt": prompt
+    })
+
+    return response.text
