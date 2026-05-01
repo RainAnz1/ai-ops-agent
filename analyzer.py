@@ -1,5 +1,4 @@
 def analyze_error(logs):
-    # 简单规则（你可以说这是“轻量模型+规则融合”）
     if "address already in use" in logs:
         return "端口占用"
     elif "permission denied" in logs:
