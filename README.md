@@ -12,8 +12,7 @@
 ```bash
 python main.py
 
-
-## 示例
+# 示例
 
 输入日志：
 nginx: [emerg] bind() to 0.0.0.0:80 failed (98: Address already in use)
