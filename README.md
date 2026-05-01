@@ -11,3 +11,13 @@
 ## 使用方法
 ```bash
 python main.py
+## 示例
+
+输入日志：
+nginx: [emerg] bind() to 0.0.0.0:80 failed (98: Address already in use)
+
+输出：
+错误类型：端口占用  
+解决方案：
+lsof -i :80
+kill -9 <PID>
