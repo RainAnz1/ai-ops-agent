@@ -1,2 +1,2 @@
-# 如果你后面接AI可以加
-requests
+# Optional dependency used only when --ai and AI_OPS_API_URL are enabled.
+requests>=2.32.0
